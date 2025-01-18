@@ -14,9 +14,10 @@ async function meow() {
 
 setTimeout(() => {
   const test = document.querySelectorAll("#video-title");
-  test.forEach(
-    (title) => (title.textContent = generatePornifiedTitle(title.textContent))
-  );
+  test.forEach(async (title) => {
+    const newTitle = await generatePornifiedTitle(title.textContent);
+    title.textContent = newTitle;
+  });
   console.log(test);
   console.log("hello from wj");
 }, 3000);
@@ -27,7 +28,9 @@ async function generatePornifiedTitle(title) {
     "AIzaSyBwJmAv979enXEPE9grY_eTo9yhWGeFL_w"
   );
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-  const prompt = "Convert this title into a sexual title - " + title;
+  const prompt =
+    "Convert this title into a cheeky sexual one, Return only the title while maintainining a playful tone without being explicitly sexual.  They hint at innuendo through word choice and suggestive phrasing, relying on the reader to fill in the gaps. - " +
+    title;
   const result = await model.generateContent(prompt);
   console.log("memomomo");
   console.log(result.response.text());
