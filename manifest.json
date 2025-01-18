@@ -32,7 +32,7 @@
       ]
     },
     {
-      "js": ["dist/bundle.js"],
+      "js": ["dist/bundle.js", "scripts/pixelate.js"],
       "matches": [
         "https://www.youtube.com/*",
         "https://youtube.com/*",

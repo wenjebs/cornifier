@@ -29,7 +29,7 @@ async function generatePornifiedTitle(title) {
   );
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
   const prompt =
-    "Convert this title into a cheeky sexual one, Return only the title while maintainining a playful tone without being explicitly sexual.  They hint at innuendo through word choice and suggestive phrasing, relying on the reader to fill in the gaps. - " +
+    "Convert this title into a cheeky sexual one, Return only the title while maintaining a playful tone without being explicitly sexual.  They hint at innuendo through word choice and suggestive phrasing, relying on the reader to fill in the gaps. - " +
     title;
   const result = await model.generateContent(prompt);
   console.log("memomomo");
