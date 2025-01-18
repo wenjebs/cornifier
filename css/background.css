@@ -26,8 +26,26 @@ limitations under the License.
     display: none !important;
   }
    */
-#container {
+button.ytSearchboxComponentSearchButton.ytSearchboxComponentSearchButtonDark{
     background-color: orange !important;
   }
 
+#video-title.ytd-rich-grid-media  {
+    color : orange !important;
+}
+
+.yt-spec-touch-feedback-shape__fill {
+    background-color: orange !important;
+}
   
+svg#yt-ringo2-svg_yt5 g path {
+    fill : orange !important;
+}
+
+.yt-icon-container.yt-icon {
+    fill : orange !important;
+}
+
+div#buttons.style-scope.ytd-masthead {
+    fill : orange !important ;
+}
