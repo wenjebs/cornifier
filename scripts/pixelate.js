@@ -6,14 +6,7 @@ setTimeout(() => {
   } else {
     console.log("Images not found.");
   }
-
-  const shortsImages = document.querySelectorAll("img.yt-core-image shortsLockupViewModelHostThumbnail");
-  if (shortsImages.length > 0) {
-    shortsImagesimages.forEach((shortImage) => pixelateImage(shortImage));
-    console.log("All thumbnails pixelated.");
-  } else {
-    console.log("Images not found.");
-  }
+  
 }, 5000); // 5000 milliseconds = 5 seconds
 
 function pixelateImage(image) {
