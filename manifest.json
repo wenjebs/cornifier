@@ -23,19 +23,12 @@
   "permissions": ["scripting", "activeTab"],
   "content_scripts": [
     {
-      "js": ["scripts/content.js"],
+      "js": ["dist/youtube.bundle.js", "dist/pixelate.bundle.js"],
       "matches": [
         "https://developer.chrome.com/docs/extensions/*",
         "https://developer.chrome.com/docs/webstore/*",
         "https://youtube.com/*",
-        "https://nusmods.com/*"
-      ]
-    },
-    {
-      "js": ["dist/bundle.js", "scripts/pixelate.js"],
-      "matches": [
         "https://www.youtube.com/*",
-        "https://youtube.com/*",
         "https://nusmods.com/*"
       ]
     }

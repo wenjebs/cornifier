@@ -15,7 +15,6 @@ chrome.runtime.onInstalled.addListener(() => {
       // Next state will always be the opposite
       const nextState = prevState === 'ON' ? 'OFF' : 'ON';
 
-
       // Set the action badge to the next state
       await chrome.action.setBadgeText({
         tabId: tab.id,
